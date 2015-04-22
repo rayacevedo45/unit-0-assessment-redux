@@ -109,12 +109,14 @@ public class Unit0Exercises
         //      alternateS1AndS2Xtimes("abra", "cadabra", 1).equals("abracadabra") == true
         //      alternateS1AndS2Xtimes("abra", "cadabra", 2).equals("abracadabraabracadabra") == true
         //      alternateS1AndS2Xtimes("abra", "cadabra", 3).equals("abracadabraabracadabraabracadabra") == true
-        String finalString = " ";
+        String finalString = "";
         //String combo = s1 + s2;
-        for(int i = 0; i <= x; i++)
+        for(int i = 0; i < x; i++)
         {
-            finalString += s1 + s2;
-
+           if (x != 0){
+               finalString += s1 + s2;
+           }
+           else finalString = "";
         }
 
         return finalString;
